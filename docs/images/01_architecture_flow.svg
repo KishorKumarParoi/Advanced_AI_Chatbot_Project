@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="100%" stop-color="#070a14"/>
+    </linearGradient>
+    <linearGradient id="uiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="wafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#831843"/>
+      <stop offset="100%" stop-color="#9d174d"/>
+    </linearGradient>
+    <linearGradient id="graphGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="mcpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#581c87"/>
+      <stop offset="100%" stop-color="#6b21a8"/>
+    </linearGradient>
+    <linearGradient id="dataGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrow-pink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f472b6"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#c084fc"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#10b981"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="660" fill="url(#bgGrad)"/>
+  <rect x="15" y="15" width="1170" height="630" rx="12" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Title Banner -->
+  <text x="40" y="55" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700">Enterprise AI Chatbot &amp; MCP Agent Mesh Architecture</text>
+  <text x="40" y="80" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">Zero-Trust WAF, Guardrails, LangGraph Cyclic FSM, Polyglot Model Context Protocol (MCP) Servers, and HITL Governance</text>
+
+  <!-- Tier 1: User & Interface Tier -->
+  <rect x="40" y="120" width="190" height="480" rx="10" fill="url(#uiGrad)" stroke="#334155" stroke-width="1.5"/>
+  <text x="55" y="155" fill="#38bdf8" font-family="sans-serif" font-size="14" font-weight="700">1. CLIENT &amp; INGRESS</text>
+
+  <rect x="55" y="175" width="160" height="85" rx="8" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+  <text x="68" y="200" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">Enterprise User</text>
+  <text x="68" y="218" fill="#94a3b8" font-family="sans-serif" font-size="11">HTTPS / SSE Stream</text>
+  <text x="68" y="234" fill="#38bdf8" font-family="sans-serif" font-size="10">Web &amp; Mobile Clients</text>
+  <text x="68" y="248" fill="#10b981" font-family="sans-serif" font-size="10">Sub-50ms TTFT Target</text>
+
+  <rect x="55" y="275" width="160" height="85" rx="8" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+  <text x="68" y="300" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">Streamlit UI (:8501)</text>
+  <text x="68" y="318" fill="#94a3b8" font-family="sans-serif" font-size="11">Interactive Chat Cockpit</text>
+  <text x="68" y="334" fill="#a7f3d0" font-family="sans-serif" font-size="10">Citation Inspector</text>
+  <text x="68" y="348" fill="#38bdf8" font-family="sans-serif" font-size="10">Live HITL Decision Deck</text>
+
+  <rect x="55" y="375" width="160" height="85" rx="8" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+  <text x="68" y="400" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">FastAPI API (:8000)</text>
+  <text x="68" y="418" fill="#94a3b8" font-family="sans-serif" font-size="11">Core Orchestrator</text>
+  <text x="68" y="434" fill="#c084fc" font-family="sans-serif" font-size="10">OpenAPI Swagger Docs</text>
+  <text x="68" y="448" fill="#10b981" font-family="sans-serif" font-size="10">Prometheus Telemetry</text>
+
+  <rect x="55" y="475" width="160" height="105" rx="8" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+  <text x="68" y="500" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">Edge CDN / Proxy</text>
+  <text x="68" y="518" fill="#94a3b8" font-family="sans-serif" font-size="11">Cloudflare Edge</text>
+  <text x="68" y="534" fill="#f59e0b" font-family="sans-serif" font-size="10">DDoS Protection</text>
+  <text x="68" y="550" fill="#10b981" font-family="sans-serif" font-size="10">TLS 1.3 Termination</text>
+
+  <!-- Tier 2: BotShield WAF & Guardrails -->
+  <rect x="250" y="120" width="220" height="480" rx="10" fill="url(#wafGrad)" stroke="#be185d" stroke-width="1.5"/>
+  <text x="268" y="155" fill="#fbcfe8" font-family="sans-serif" font-size="14" font-weight="700">2. BOTSHIELD WAF &amp; GUARD</text>
+
+  <rect x="265" y="175" width="190" height="85" rx="8" fill="#500724" stroke="#f472b6" stroke-width="1"/>
+  <text x="278" y="200" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">BotShield Middleware</text>
+  <text x="278" y="218" fill="#fbcfe8" font-family="sans-serif" font-size="11">Sliding-Window Limiter</text>
+  <text x="278" y="234" fill="#94a3b8" font-family="sans-serif" font-size="10">Honeypot Trap Fields</text>
+  <text x="278" y="248" fill="#ef4444" font-family="sans-serif" font-size="10">Auto-Ban Malicious IPs</text>
+
+  <rect x="265" y="275" width="190" height="85" rx="8" fill="#500724" stroke="#f472b6" stroke-width="1"/>
+  <text x="278" y="300" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">Anti-Jailbreak Filter</text>
+  <text x="278" y="318" fill="#fbcfe8" font-family="sans-serif" font-size="11">Prompt Injection Shield</text>
+  <text x="278" y="334" fill="#94a3b8" font-family="sans-serif" font-size="10">Pattern &amp; Semantic Scan</text>
+  <text x="278" y="348" fill="#10b981" font-family="sans-serif" font-size="10">Zero Leaks Policy</text>
+
+  <rect x="265" y="375" width="190" height="85" rx="8" fill="#500724" stroke="#f472b6" stroke-width="1"/>
+  <text x="278" y="400" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">PII Redaction Engine</text>
+  <text x="278" y="418" fill="#fbcfe8" font-family="sans-serif" font-size="11">Automated Sanitization</text>
+  <text x="278" y="434" fill="#94a3b8" font-family="sans-serif" font-size="10">SSN, Emails, Credit Cards</text>
+  <text x="278" y="448" fill="#38bdf8" font-family="sans-serif" font-size="10">GDPR &amp; HIPAA Compliant</text>
+
+  <rect x="265" y="475" width="190" height="105" rx="8" fill="#500724" stroke="#f472b6" stroke-width="1"/>
+  <text x="278" y="500" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">Semantic Fallback</text>
+  <text x="278" y="518" fill="#fbcfe8" font-family="sans-serif" font-size="11">Threat Interception</text>
+  <text x="278" y="534" fill="#ef4444" font-family="sans-serif" font-size="10">Blocks Malicious Payloads</text>
+  <text x="278" y="550" fill="#10b981" font-family="sans-serif" font-size="10">Safe Rejection Responses</text>
+
+  <!-- Tier 3: LangGraph Stateful Cyclic FSM -->
+  <rect x="490" y="120" width="230" height="480" rx="10" fill="url(#graphGrad)" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="508" y="155" fill="#bfdbfe" font-family="sans-serif" font-size="14" font-weight="700">3. LANGGRAPH REASONING</text>
+
+  <rect x="505" y="175" width="200" height="85" rx="8" fill="#172554" stroke="#3b82f6" stroke-width="1"/>
+  <text x="518" y="200" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">Intent Router Node</text>
+  <text x="518" y="218" fill="#bfdbfe" font-family="sans-serif" font-size="11">Classifies User Query</text>
+  <text x="518" y="234" fill="#94a3b8" font-family="sans-serif" font-size="10">Catalog vs Review vs General</text>
+  <text x="518" y="248" fill="#10b981" font-family="sans-serif" font-size="10">Dynamic Edge Selection</text>
+
+  <rect x="505" y="275" width="200" height="85" rx="8" fill="#172554" stroke="#3b82f6" stroke-width="1"/>
+  <text x="518" y="300" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">Query Decomposition</text>
+  <text x="518" y="318" fill="#bfdbfe" font-family="sans-serif" font-size="11">Splits Compound Prompts</text>
+  <text x="518" y="334" fill="#94a3b8" font-family="sans-serif" font-size="10">Parallel Sub-Query Spawn</text>
+  <text x="518" y="348" fill="#38bdf8" font-family="sans-serif" font-size="10">Multi-Perspective Search</text>
+
+  <rect x="505" y="375" width="200" height="85" rx="8" fill="#172554" stroke="#3b82f6" stroke-width="1"/>
+  <text x="518" y="400" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">Planning &amp; Tool Agent</text>
+  <text x="518" y="418" fill="#bfdbfe" font-family="sans-serif" font-size="11">Invokes MCP Microservices</text>
+  <text x="518" y="434" fill="#94a3b8" font-family="sans-serif" font-size="10">JSON-RPC Context Injection</text>
+  <text x="518" y="448" fill="#c084fc" font-family="sans-serif" font-size="10">Self-Correction Feedback</text>
+
+  <rect x="505" y="475" width="200" height="105" rx="8" fill="#172554" stroke="#3b82f6" stroke-width="1"/>
+  <text x="518" y="500" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">HITL Checkpoint Gate</text>
+  <text x="518" y="518" fill="#bfdbfe" font-family="sans-serif" font-size="11">Suspends Critical Mutations</text>
+  <text x="518" y="534" fill="#ef4444" font-family="sans-serif" font-size="10">Supervisor Approval Step</text>
+  <text x="518" y="550" fill="#10b981" font-family="sans-serif" font-size="10">POST /rag/hitl/approve</text>
+
+  <!-- Tier 4: Model Context Protocol (MCP) Tier -->
+  <rect x="740" y="120" width="200" height="480" rx="10" fill="url(#mcpGrad)" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="755" y="155" fill="#e9d5ff" font-family="sans-serif" font-size="14" font-weight="700">4. MCP TOOL MESH</text>
+
+  <rect x="750" y="175" width="180" height="90" rx="8" fill="#3b0764" stroke="#a855f7" stroke-width="1"/>
+  <text x="762" y="200" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">MCP Product Catalog</text>
+  <text x="762" y="218" fill="#d8b4fe" font-family="sans-serif" font-size="11">Port: 8002 (FastMCP)</text>
+  <text x="762" y="234" fill="#94a3b8" font-family="sans-serif" font-size="10">Vector search &amp; specs</text>
+  <text x="762" y="248" fill="#10b981" font-family="sans-serif" font-size="10">JSON-RPC / SSE Stream</text>
+
+  <rect x="750" y="280" width="180" height="90" rx="8" fill="#3b0764" stroke="#a855f7" stroke-width="1"/>
+  <text x="762" y="305" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">MCP Customer Reviews</text>
+  <text x="762" y="325" fill="#d8b4fe" font-family="sans-serif" font-size="11">Port: 8003 (FastMCP)</text>
+  <text x="762" y="343" fill="#94a3b8" font-family="sans-serif" font-size="10">Sentiment &amp; feedback</text>
+  <text x="762" y="359" fill="#38bdf8" font-family="sans-serif" font-size="10">HNSW filtered search</text>
+
+  <rect x="750" y="385" width="180" height="95" rx="8" fill="#3b0764" stroke="#a855f7" stroke-width="1"/>
+  <text x="762" y="410" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">Tool Aggregator</text>
+  <text x="762" y="430" fill="#d8b4fe" font-family="sans-serif" font-size="11">Merges Multi-Source Hits</text>
+  <text x="762" y="448" fill="#94a3b8" font-family="sans-serif" font-size="10">Reciprocal Rank Fusion</text>
+  <text x="762" y="466" fill="#10b981" font-family="sans-serif" font-size="10">Confidence Scoring</text>
+
+  <rect x="750" y="495" width="180" height="85" rx="8" fill="#3b0764" stroke="#a855f7" stroke-width="1"/>
+  <text x="762" y="520" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">Zero-Cost Teardown</text>
+  <text x="762" y="540" fill="#d8b4fe" font-family="sans-serif" font-size="11">./clear.sh Purges Stack</text>
+  <text x="762" y="558" fill="#10b981" font-family="sans-serif" font-size="10">$0.00 idle compute</text>
+
+  <!-- Tier 5: Data & Persistence Tier -->
+  <rect x="960" y="120" width="200" height="480" rx="10" fill="url(#dataGrad)" stroke="#059669" stroke-width="1.5"/>
+  <text x="975" y="155" fill="#a7f3d0" font-family="sans-serif" font-size="14" font-weight="700">5. PERSISTENCE &amp; STORE</text>
+
+  <rect x="970" y="175" width="180" height="90" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+  <text x="982" y="200" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">Qdrant Vector DB (:6333)</text>
+  <text x="982" y="218" fill="#a7f3d0" font-family="sans-serif" font-size="11">HNSW Vector Index</text>
+  <text x="982" y="234" fill="#94a3b8" font-family="sans-serif" font-size="10">All-MiniLM-L6-v2 Embeds</text>
+  <text x="982" y="248" fill="#38bdf8" font-family="sans-serif" font-size="10">Sub-15ms ANN Lookups</text>
+
+  <rect x="970" y="280" width="180" height="90" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+  <text x="982" y="305" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">PostgreSQL 16 (:5434)</text>
+  <text x="982" y="325" fill="#a7f3d0" font-family="sans-serif" font-size="11">LangGraph Checkpointer</text>
+  <text x="982" y="343" fill="#94a3b8" font-family="sans-serif" font-size="10">Session Thread State</text>
+  <text x="982" y="359" fill="#10b981" font-family="sans-serif" font-size="10">ACID State Recovery</text>
+
+  <rect x="970" y="385" width="180" height="95" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+  <text x="982" y="410" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">Semantic Cache (Redis)</text>
+  <text x="982" y="430" fill="#a7f3d0" font-family="sans-serif" font-size="11">Exact &amp; Fuzzy Cache</text>
+  <text x="982" y="448" fill="#94a3b8" font-family="sans-serif" font-size="10">Sub-5ms Cache Hits</text>
+  <text x="982" y="466" fill="#10b981" font-family="sans-serif" font-size="10">65% Token Cost Reduction</text>
+
+  <rect x="970" y="495" width="180" height="85" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+  <text x="982" y="520" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">Prometheus Telemetry</text>
+  <text x="982" y="540" fill="#a7f3d0" font-family="sans-serif" font-size="11">Latency &amp; Token Counters</text>
+  <text x="982" y="558" fill="#38bdf8" font-family="sans-serif" font-size="10">SLO Dashboard</text>
+
+  <!-- Connective Arrows -->
+  <path d="M 230 215 L 265 215" stroke="#38bdf8" stroke-width="2" fill="none" marker-end="url(#arrow-blue)"/>
+  <path d="M 470 215 L 505 215" stroke="#f472b6" stroke-width="2" fill="none" marker-end="url(#arrow-pink)"/>
+  <path d="M 720 215 L 750 215" stroke="#c084fc" stroke-width="2" fill="none" marker-end="url(#arrow-purple)"/>
+  <path d="M 940 215 L 970 215" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrow-green)"/>
+
+</svg>

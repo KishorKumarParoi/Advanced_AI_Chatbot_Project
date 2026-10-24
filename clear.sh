@@ -48,4 +48,4 @@ done
 find . -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true
 find . -type d -name ".pytest_cache" -exec rm -rf {} + 2>/dev/null || true
 
-echo -e "${GREEN}${BOLD}✔ 100% Zero-Resource State Confirmed: No active processes, zero cost burn ($0.00/hr).${NC}\n"
+echo -e "${GREEN}${BOLD}✔ 100% Zero-Resource State Confirmed: No active processes, zero cost burn (\$0.00/hr).${NC}\n"

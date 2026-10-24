@@ -8,8 +8,31 @@
 [![Qdrant Vector DB](https://img.shields.io/badge/Qdrant-Hybrid%20Dense%2BSparse-DC2626?logo=qdrant&logoColor=white)](https://qdrant.tech/)
 [![Streamlit UI](https://img.shields.io/badge/Streamlit-1.42-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16%20Checkpoints-336791?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Architecture: Specification](https://img.shields.io/badge/Architecture-Specification-8A2BE2?logo=diagramsdotnet&logoColor=white)](ARCHITECTURE.md)
+[![Workflow: SVG Flow](https://img.shields.io/badge/Workflow-Interactive_SVG-00C7B7?logo=vectorlogozone&logoColor=white)](docs/images/01_architecture_flow.svg)
 
-> **A mission-critical, enterprise-grade Conversational AI and Operational Agent platform engineered for high-throughput, fault-tolerant e-commerce environments.** Built on a **Decoupled Microservice Architecture** with **LangGraph state machines**, native **Model Context Protocol (MCP)** tool execution, **Human-in-the-Loop (HITL) financial governance gating**, **BotShield WAF dual-layer security**, and real-time **Server-Sent Events (SSE)** streaming.
+> **A mission-critical, enterprise-grade Conversational AI and Operational Agent platform engineered for high-throughput, fault-tolerant e-commerce environments.** Built on a **Decoupled Microservice Architecture** with **LangGraph state machines**, native **Model Context Protocol (MCP)** tool execution, **Human-in-the-Loop (HITL) financial governance gating**, **BotShield WAF dual-layer security**, and real-time **Server-Sent Events (SSE)** streaming. Full architecture blueprint available in [ARCHITECTURE.md](ARCHITECTURE.md) and interactive vector flow in [01_architecture_flow.svg](docs/images/01_architecture_flow.svg).
+
+![Enterprise AI Chatbot Architecture Flow](docs/images/01_architecture_flow.svg)
+
+---
+
+## ⚡ Zero-Touch 1-Command Autonomous EC2 & Cloud Deployment
+
+Launch the complete Advanced AI Chatbot & MCP Agent Platform directly on **any fresh, bare EC2 instance (Ubuntu, Debian, Amazon Linux 2023) or cloud VM** in a single command. **No pre-installation of Git, Docker, or Python is required**:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/KishorKumarParoi/Advanced_AI_Chatbot_Project/main/bootstrap.sh | bash
+```
+
+### 🎯 Fast Execution Modes
+
+| Deployment Mode | Command | Footprint |
+| :--- | :--- | :--- |
+| **Full Containerized Stack (Recommended)** | `curl -fsSL https://raw.githubusercontent.com/KishorKumarParoi/Advanced_AI_Chatbot_Project/main/bootstrap.sh \| bash` | Streamlit UI (`:8501`), FastAPI API (`:8000`), Qdrant (`:6333`), Postgres (`:5434`), MCP Servers (`:8002`, `:8003`) |
+| **Lightweight Native Python (<15s)** | `curl -fsSL https://raw.githubusercontent.com/KishorKumarParoi/Advanced_AI_Chatbot_Project/main/bootstrap.sh \| bash -s -- --standalone` | Minimal bare runtime (< 150MB RAM, zero Docker dependency) |
+| **Ultra-Fast Cloud Mode (<30s)** | `curl -fsSL https://raw.githubusercontent.com/KishorKumarParoi/Advanced_AI_Chatbot_Project/main/bootstrap.sh \| bash -s -- --quick` | Core UI & Gateway |
+| **Zero-Cost Instant Teardown ($0.00)** | `./clear.sh` | Purges all containers, background processes, and ports |
 
 ---
 
