@@ -290,3 +290,21 @@ uv run python scripts/verify_principal_chatbot.py
 
 ## 📄 License
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
+## 🚀 Zero-Touch Instant Cloud & Workstation Deployment
+
+Deploy this platform on **any fresh EC2 instance, cloud VM, or local machine with a single terminal command**:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/KishorKumarParoi/Advanced_AI_Chatbot_Project/main/bootstrap.sh | bash
+```
+
+### 🆘 One-Click Link For Whom It Is Not Working (Zero-Docker Standalone Mode)
+If Docker is not running or permissions are restricted, run this instant fail-safe native command:
+```bash
+curl -fsSL https://raw.githubusercontent.com/KishorKumarParoi/Advanced_AI_Chatbot_Project/main/bootstrap.sh | bash -s -- --standalone
+```
+
+### 🧹 Zero-Cost Instant Teardown ($0.00/hr):
+```bash
+./clear.sh
+```
